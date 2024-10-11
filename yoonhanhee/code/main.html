@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - WELCOME</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.JS" defer></script> 
+  <script>
+    window.onload = function() {
+      alert("윤한희의 웹사이트에 오신 것을 환영합니다!");
+    };
+  </script>
+</head>
+<body>
+  <h1><a href="main.html">자기소개</a></h1>
+  <div class="선">
+    <div id="밤낮버튼">
+      <input type="button" value="NIGHT" onclick="NightMode()">
+      <input type="button" value="DAY" onclick="DayMode()">
+  </div>
+  </div>
+  <div id="grid" >
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleAccordion(this)">목록▽</div>
+      <ol class="accordion-content">
+        <li><a href="sub1-기본정보.html">기본정보</a></li>
+          <li><a href="sub2-인사말.html">인사말</a></li>
+         <li><a href="sub3-퀴즈.html">퀴즈</a></li>
+      </ol>
+    </div>
+    <div id="소개">
+      <img class="슬라이드" src="../사진자료/햄찌.jpg" alt="햄찌" width="50%">
+      <img class="슬라이드" src="../사진자료/선글라스 햄찌.jpg" alt="선글라스 햄찌" width="50%">
+      <img class="슬라이드" src="../사진자료/안경 햄찌.jpg" alt="안경 햄찌" width="50%">
+      <h2><간략소개></h2>
+      <p>
+      안녕하세요 저는 윤한희 라고 합니다!
+      </p> 
+    </div>
+  </div>
+</body>
+</html>

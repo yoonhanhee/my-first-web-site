@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+      <title>WEB1 - Quiz</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+     <script src="quiz.js" defer></script> 
+     <script src="script.JS" defer></script> 
+</head>
+ <body>
+    <h1><a href="main.html">자기소개</a></h1>
+    <div id="밤낮버튼">
+        <input type="button" value="NIGHT" onclick="NightMode()">
+        <input type="button" value="DAY" onclick="DayMode()">
+      </div>
+     <div id="grid">
+        <ol>
+            <li><a href="sub1-기본정보.html">기본정보</a></li>
+             <li><a href="sub2-인사말.html">인사말</a></li>
+             <li><a href="sub3-퀴즈.html">퀴즈</a></li>
+         </ol>
+        <div id="퀴즈">
+            <img src="../사진자료/그게 뭐냥.jpg" width="50%">
+            <h2>퀴즈를 풀어보세요!</h2>
+            <p>이제 저에 관해 더 알아보도록 할까요?</p>
+            <div id="quiz" class="quiz-container"></div> 
+            <p id="result"></p>
+            <button onclick="submitQuiz()">퀴즈 제출</button>
+        </div>
+    </div>
+ </body>
+ </html>
